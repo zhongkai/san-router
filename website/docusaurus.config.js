@@ -11,7 +11,7 @@ const path = require('path');
         staticDirectories: [path.resolve(__dirname, './static')],
 
         url: 'https://BUPTlhuanyu.github.io', // Your website URL
-        baseUrl: '/',
+        baseUrl: '/san-router',
 
         projectName: 'SanRouter', // Usually your repo name.
         organizationName: 'BUPTlhuanyu', // Usually your GitHub org/user name.
