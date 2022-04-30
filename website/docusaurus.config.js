@@ -18,7 +18,7 @@ const path = require('path');
 
         onBrokenLinks: 'ignore',
         onBrokenMarkdownLinks: 'warn',
-        favicon: path.resolve(__dirname, './static/favicon.ico'),
+        favicon: 'img/favicon.ico',
 
         presets: [
             [
