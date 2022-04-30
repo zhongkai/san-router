@@ -16,7 +16,7 @@ router.listen(function (/* listener 事件对象 */listenerEvent, /* 当前匹�
 
 每个守卫方法接收两个参数：
 
-- listenerEvent：路由事件对象，参考[listenerEvent](#数据接口)
+- listenerEvent：路由事件对象，参考[listenerEvent](/san-router/docs/data-structure)
 - config：匹配到的配置对象
 
 我们可以通过 listenerEvent 对象控制导航过程。

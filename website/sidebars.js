@@ -20,6 +20,7 @@ module.exports = {
             "guid/navigation-guards"
           ],
         },
-        'api'
+        'api',
+        'data-structure'
     ],
 }

@@ -5,7 +5,7 @@ slug: '/guid/add-route'
 title: '添加路由'
 ---
 
-san-router 提供了默认的 router 实例，我们可以通过该实例添加一条路由信息或者一组[路由配置信息](#routeConfigInfo)；san-router 支持 hash 模式以及 html5 模式，默认的 router 实例是 hash 模式，可以通过 router 的实例方法 setMode 设置为 html5 模式：
+san-router 提供了默认的 router 实例，我们可以通过该实例添加一条路由信息或者一组[路由配置信息](/san-router/docs/data-structure)；san-router 支持 hash 模式以及 html5 模式，默认的 router 实例是 hash 模式，可以通过 router 的实例方法 setMode 设置为 html5 模式：
 
 ```javascript
 import {router} from 'san-router';

@@ -33,7 +33,7 @@ const BookDetail = san.defineComponent({
 })
 ```
 
-如果想在 BookDetail 中的子组件中获取路由参数，那么你可以借助下面的 [withRoute](#嵌套路由) 来实现。
+如果想在 BookDetail 中的子组件中获取路由参数，那么你可以借助下面的 [withRoute](/san-router/docs/guid/nested-routes) 来实现。
 
 你可以在同一个路由中设置有多个 *路径参数*，它们会映射到 `this.data.get('route.query')` 上的相应字段。例如：
 
