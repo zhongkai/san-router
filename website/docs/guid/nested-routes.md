@@ -5,6 +5,8 @@ slug: '/guid/nested-routes'
 title: '嵌套路由'
 ---
 
+> 注意：使用 s-is 指令，要求 San 的版本号 >= 3.10.0
+
 一些页面的 UI 由多层嵌套的组件组成。在这种情况下，URL 的片段通常对应于特定的嵌套组件结构
 
 ```javascript

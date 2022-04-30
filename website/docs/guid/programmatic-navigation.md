@@ -1,8 +1,8 @@
 ---
 id: programmatic-navigation
-sidebar_label: 添加路由
+sidebar_label: 编程式路由
 slug: '/guid/programmatic-navigation'
-title: '添加路由'
+title: '编程式路由'
 ---
 
 除了使用 `<link>` 创建 a 标签来定义导航链接，我们还可以借助 router 的实例方法，通过编写代码来实现。比如使用 router.push 导航到特定的路由切换视图，这个方法会向 history 栈添加一个新的记录，所以，当用户点击浏览器后退按钮时，会回到之前的 URL。点击 `<link to="...">` 相当于调用 `router.push(...)` ：
@@ -30,7 +30,7 @@ this.$router.push({
 const BookDetail = san.defineComponent({
   	template: '<div></div>',
   	attached: function () {
-				this.data.get('route').queryString === 'name=errik'
+        this.data.get('route').queryString === 'name=errik'
     }
 })
 ```

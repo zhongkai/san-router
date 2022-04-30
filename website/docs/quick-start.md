@@ -88,3 +88,7 @@ require.config({
     }
 });
 ```
+
+## CHANGELOG
+
+[CHANGELOG](https://github.com/BUPTlhuanyu/san-router/blob/master/CHANGELOG.md)

@@ -24,7 +24,6 @@ title: '数据结构'
 | params      | url 经过路由匹配的参数 | object   |
 | query       | url 参数             | object   |
 | queryString | query 字符串形式     | string   |
-| config      | 配置信息             | object   |
 | resume      | 恢复导航过程         | function |
 | stop        | 取消导航             | function |
 
