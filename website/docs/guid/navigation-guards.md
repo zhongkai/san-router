@@ -7,7 +7,7 @@ title: '导航守卫'
 
 ### 基本用法
 
-你可以使用 route.listen 添加路由监听器，用于全局前置守卫；当发生路由行为时，监听器函数被触发。
+你可以使用 `route.listen` 添加路由监听器，用于全局前置守卫；当发生路由行为时，监听器函数被触发。
 ```javascript
 import {router} from 'san-router';
 router.listen(function (/* listener 事件对象 */listenerEvent) {
