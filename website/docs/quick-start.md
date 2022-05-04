@@ -8,9 +8,9 @@ title: '快速开始'
 [![NPM version](http://img.shields.io/npm/v/san-router.svg?style=flat-square)](https://npmjs.org/package/san-router)
 [![License](https://img.shields.io/github/license/baidu/san-router.svg?style=flat-square)](https://npmjs.org/package/san-router)
 
-[San](https://baidu.github.io/san/) 框架的官方 router。通常，单页或同构的 Web 应用都会需要一个 router。
+通常来说，单页或同构的 Web 应用都会需要一个 router 来协助控制路由切换以及管理路由信息，并且能够和已使用的业务框架集成。而 san-router 就是 [San](https://baidu.github.io/san/) 框架的官方 router。
 
-你可以从下面找到 san-router 的下载和使用说明，也可以直接从 [示例项目](https://github.com/baidu/san/tree/master/example/todos-esnext) 看看实际项目中的使用方法。
+下文将介绍如何下载并使用 san-router，如果你向直接了解 san-router 在实际项目中的用法，可以直接访问 [示例项目](https://github.com/baidu/san/tree/master/example/todos-esnext) ，通过源码和运行效果来了解 san-router。
 
 > 注意：使用 san-router，要求 San 的版本号 >= 3.0.2
 
@@ -22,15 +22,14 @@ NPM:
 $ npm i san-router
 ```
 
-
 ## 使用
 
-### Webpack + Babel
+### ESM
 
-通过 named import 导入
+通过 named import 方式导入：
 
 ```javascript
-import {router, Link} from 'san-router';
+import {router} from 'san-router';
 
 router.add({
     rule: '/book',
@@ -49,17 +48,13 @@ router.add([
 router.start();
 ```
 
-webpack 环境配置网上有太多文章，在此不赘述了
-
-
 ### AMD
 
-通过 require 拿到的 exports 上包含 router 和 Link
+通过 `require('san-router')` 获取 exports 对象以使用 router：
 
 ```javascript
 var sanRouter = require('san-router');
 var router = sanRouter.router;
-var Link = sanRouter.Link;
 
 router.add({
     rule: '/book',
@@ -78,7 +73,7 @@ router.add([
 router.start();
 ```
 
-请为 amd loader 正确配置 san-router 的引用路径。通过 npm 安装的项目可以采用下面的配置
+请为 AMD Loader 配置正确的 san-router 的引用路径，通过 npm 安装的项目可以采用如下配置：
 
 ```javascript
 require.config({
@@ -88,6 +83,10 @@ require.config({
     }
 });
 ```
+
+### 完整的 API
+
+无论通过那种模块加载方式，san-router 为开发者提供了丰富的接口和组件来支持路由相关功能的开发，详情参见 san-router 的 [API](/san-router/docs/api)。
 
 ## CHANGELOG
 

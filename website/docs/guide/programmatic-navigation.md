@@ -1,7 +1,7 @@
 ---
 id: programmatic-navigation
 sidebar_label: 编程式路由
-slug: '/guid/programmatic-navigation'
+slug: '/guide/programmatic-navigation'
 title: '编程式路由'
 ---
 

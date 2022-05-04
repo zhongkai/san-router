@@ -12,7 +12,7 @@ title: '数据结构'
 | rule      | 路由规则                                                     | string            |
 | Component | 路由组件                                                     | function \| class |
 | target    | 需要挂载的目标 dom 或者 dom 选择器                           | string \| object  |
-| handler   | 如果Component没有给定，则在路由切换的时候执行该函数；如果给定了Component，则在路由切换之后，Component 挂载之后立即执行该函数； | function          |
+| handler   | 如果没有指定 Component，则在路由切换的时候执行该函数；如果指定了 Component，则在路由切换之后，Component 挂载之后立即执行该函数 | function          |
 
 ### listenerEvent
 

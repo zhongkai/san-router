@@ -12,12 +12,12 @@ module.exports = {
             type: 'generated-index',
           },
           items: [
-            "guid/add-route",
-            "guid/dynamic-route-matching",
-            "guid/nested-routes",
-            "guid/lazy-loading-routes",
-            "guid/programmatic-navigation",
-            "guid/navigation-guards"
+            "guide/add-route",
+            "guide/dynamic-route-matching",
+            "guide/nested-routes",
+            "guide/lazy-loading-routes",
+            "guide/programmatic-navigation",
+            "guide/navigation-guards"
           ],
         },
         'api',
